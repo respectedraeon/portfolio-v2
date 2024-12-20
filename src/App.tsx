@@ -4,7 +4,9 @@ import AppPage from './pages';
 
 function App() {
   return (
-    <AppPage />
+    <div className='flex' style={{width : "360px", height : "720px", overflow : "hidden"}}>
+      <AppPage />
+    </div>
   );
 }
 

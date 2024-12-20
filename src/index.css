@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+span, input {
+  font-family: "Supercell";
+}
+
 .w-100 {
   min-width: 360px;
   max-width: 360px;
@@ -21,6 +25,36 @@ code {
   height: 720px;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Hide scrollbars in WebKit browsers */
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* Hide scrollbars in Firefox */
+* {
+  scrollbar-width: none; 
+}
+
+/* Hide scrollbars in Internet Explorer and Edge */
+*::-webkit-scrollbar { 
+  display: none;
+} 
+
+* {
+  -ms-overflow-style: none; 
+}
+
+@keyframes animRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
